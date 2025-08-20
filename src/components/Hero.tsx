@@ -1,6 +1,5 @@
 import React from 'react';
 import { ChevronDown, MapPin, Building } from 'lucide-react';
-import sumanPhoto from '../assets/suman.webp';
 
 const Hero: React.FC = () => {
   const scrollToNext = () => {
@@ -69,7 +68,7 @@ const Hero: React.FC = () => {
     <div className="w-80 h-80 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 p-1 animate-pulse">
       <div className="w-full h-full bg-gray-900 flex items-center justify-center">
         <img
-          src={sumanPhoto}
+          src="/suman.webp"
           alt="Suman Dhami"
           className="w-72 h-72 object-cover"
         />
