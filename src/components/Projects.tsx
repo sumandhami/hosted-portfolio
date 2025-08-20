@@ -145,6 +145,7 @@ const Projects: React.FC = () => {
                         className="p-2 bg-gray-700/50 hover:bg-gray-600/50 rounded-lg transition-colors duration-300 pointer-events-auto"
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label={`View ${project.title} on GitHub`} // <-- added
                       >
                         <Github size={22} />
                       </a>

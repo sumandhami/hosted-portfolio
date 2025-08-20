@@ -240,6 +240,7 @@ const Contact: React.FC = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`p-4 bg-gray-700/50 hover:bg-gray-600/50 rounded-xl transition-all duration-300 transform hover:scale-110 hover:rotate-12 hover:shadow-lg hover:shadow-blue-500/30 ${social.color}`}
+                    aria-label={`Visit ${social.label}`} // <-- added
                   >
                     <social.icon size={24} />
                   </a>
