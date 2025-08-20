@@ -1,0 +1,56 @@
+name: Deploy React App to GitHub Pages
+
+# When should this workflow run?
+on:
+  push:
+    branches: [ main ]  # Only run when pushing to main branch
+
+# Define permissions for the workflow
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Only allow one deployment at a time
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest  # Use Ubuntu server
+    
+    steps:
+    # Step 1: Download your repository code
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    # Step 2: Setup Node.js (JavaScript runtime)
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'        # Use Node.js version 18
+        cache: 'npm'              # Cache npm packages for faster builds
+
+    # Step 3: Install your project dependencies
+    - name: Install dependencies
+      run: npm install
+
+    # Step 4: Build your React app
+    - name: Build React app
+      run: npm run build
+
+    # Step 5: Setup GitHub Pages
+    - name: Setup Pages
+      uses: actions/configure-pages@v4
+
+    # Step 6: Upload the built files
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: ./dist              # Upload the dist folder
+
+    # Step 7: Deploy to GitHub Pages
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
