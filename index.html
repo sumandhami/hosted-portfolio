@@ -1,28 +1,25 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- ✅ Preload LCP image -->
+    <link rel="preload" as="image" href="/suman-1x.webp" />
 
-  <!-- ✅ Preload your LCP image -->
-  <link rel="preload" as="image" href="/suman-1x.webp" />
+    <!-- ✅ Preload Tailwind CSS with async loading to reduce render-blocking -->
+    <link rel="preload" href="/assets/index-BF72tfdn.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="/assets/index-BF72tfdn.css" />
+    </noscript>
 
-  <!-- ✅ Preload and apply Tailwind CSS -->
-  <link rel="preload" as="style" href="/assets/index-BF72tfdn.css" />
-  <link rel="stylesheet" href="/assets/index-BF72tfdn.css" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Suman Dhami - Co-founder & Lead Developer | AlpineRoot Technologies</title>
-  <meta name="description"
-    content="Portfolio of Suman Dhami, Co-founder & Lead Developer at AlpineRoot Technologies. Specializing in AI/ML, Full-Stack Development, and IoT Solutions." />
-  <meta name="keywords"
-    content="Ram Prasad, Full Stack Developer, AI ML Engineer, React Developer, Flutter Developer, IoT Developer, Nepal Developer" />
-</head>
-
-<body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
-</body>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suman Dhami - Co-founder & Lead Developer | AlpineRoot Technologies</title>
+    <meta name="description" content="Portfolio of Ram Prasad, Co-founder & Lead Developer at XYZ Technologies. Specializing in AI/ML, Full-Stack Development, and IoT Solutions." />
+    <meta name="keywords" content="Ram Prasad, Full Stack Developer, AI ML Engineer, React Developer, Flutter Developer, IoT Developer, Nepal Developer" />
+  </head>
+  <body class="bg-gray-900 text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
