@@ -94,6 +94,7 @@ const Hero: React.FC = () => {
         <button
           onClick={scrollToNext}
           className="text-gray-400 hover:text-white transition-colors duration-300"
+          aria-label="Scroll to About section"
         >
           <ChevronDown size={32} />
         </button>
