@@ -1,6 +1,6 @@
 import React from 'react';
 import { ChevronDown, MapPin, Building } from 'lucide-react';
-import sumanPhoto from '../assets/suman.jpeg';
+import sumanPhoto from '../assets/suman.webp';
 
 const Hero: React.FC = () => {
   const scrollToNext = () => {
