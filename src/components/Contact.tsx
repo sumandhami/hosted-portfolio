@@ -117,6 +117,7 @@ const Contact: React.FC = () => {
                       required
                       className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors duration-300 text-white placeholder-gray-400"
                       placeholder="Your full name"
+                      autoComplete='name'
                     />
                   </div>
                   <div>
@@ -132,6 +133,7 @@ const Contact: React.FC = () => {
                       required
                       className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors duration-300 text-white placeholder-gray-400"
                       placeholder="your.email@example.com"
+                      autoComplete='email'
                     />
                   </div>
                 </div>
@@ -148,6 +150,7 @@ const Contact: React.FC = () => {
                     required
                     className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors duration-300 text-white placeholder-gray-400"
                     placeholder="What's this about?"
+                    autoComplete='subject'
                   />
                 </div>
                 <div>
@@ -163,6 +166,7 @@ const Contact: React.FC = () => {
                     rows={6}
                     className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors duration-300 text-white placeholder-gray-400 resize-none"
                     placeholder="Tell me about your project or idea..."
+                    autoComplete='message'
                   ></textarea>
                 </div>
                 <button
